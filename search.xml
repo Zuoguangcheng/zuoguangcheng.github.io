@@ -4,6 +4,13 @@
     <title><![CDATA[hello hexo]]></title>
     <url>%2F2018%2F07%2F25%2Fhello-hexo%2F</url>
     <content type="text"></content>
+      <categories>
+        <category>hello hexo</category>
+      </categories>
+      <tags>
+        <tag>哈哈</tag>
+        <tag>啦啦</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[test]]></title>
