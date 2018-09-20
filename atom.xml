@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-29T06:57:43.804Z</updated>
+  <updated>2018-09-20T07:17:53.282Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -18,10 +18,36 @@
   
   <entry>
     <title>background-position</title>
+    <link href="http://yoursite.com/2018/07/29/animation/"/>
+    <id>http://yoursite.com/2018/07/29/animation/</id>
+    <published>2018-07-29T06:37:35.000Z</published>
+    <updated>2018-09-20T07:17:53.282Z</updated>
+    
+    <content type="html"><![CDATA[<p>机滤两个关于动画的博客：</p><p><a href="http://www.w3cplus.com/animaton/animations-you-should-know.html" target="_blank" rel="noopener">http://www.w3cplus.com/animaton/animations-you-should-know.html</a></p><p><a href="https://www.h5jun.com/post/animations-you-should-know.html" target="_blank" rel="noopener">https://www.h5jun.com/post/animations-you-should-know.html</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;机滤两个关于动画的博客：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.w3cplus.com/animaton/animations-you-should-know.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.w
+      
+    
+    </summary>
+    
+      <category term="动画" scheme="http://yoursite.com/categories/%E5%8A%A8%E7%94%BB/"/>
+    
+    
+      <category term="动画" scheme="http://yoursite.com/tags/%E5%8A%A8%E7%94%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>background-position</title>
     <link href="http://yoursite.com/2018/07/29/background-position/"/>
     <id>http://yoursite.com/2018/07/29/background-position/</id>
     <published>2018-07-29T06:37:35.000Z</published>
-    <updated>2018-07-29T06:57:43.804Z</updated>
+    <updated>2018-09-20T07:09:12.675Z</updated>
     
     <content type="html"><![CDATA[<p>语法：<br>background-position : length || length<br>background-position : position || position<br>取值：<br>length  : 百分数 | 由浮点数字和单位标识符组成的长度值。请参阅 长度单位<br>position  : top | center | bottom | left | center | right </p><a id="more"></a><p>说明：<br>设置或检索对象的背景图像位置。必须先指定 background-image 属性。<br>该属性定位不受对象的补丁属性( padding )设置影响。<br>默认值为： 0% 0% 。此时背景图片将被定位于对象不包括补丁( padding )的内容区域的左上角。<br>如果只指定了一个值，该值将用于横坐标。纵坐标将默认为 50% 。如果指定了两个值，第二个值将用于纵坐标。<br>如果设置值为 right center ，因为 right 作为横坐标值将会覆盖 center 值，所以背景图片将被居右定位。<br>对应的脚本特性为 backgroundPosition。</p><p>注： 本文中使用的图片大小为 300px*120px，为了能很清晰的表达图形的哪部分被隐藏了，按照图片的大小平均分成了9等份。同时背景图片容器区域绘制出绿色边框清晰显示容器的范围。<br>1、background-position:0 0;<br>背景图片的左上角将与容器元素的左上角对齐。该设置与background-position:left top;或者background-position:0% 0%;设置的效果是一致的。例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.container&#123;</span><br><span class="line">    width:300px;</span><br><span class="line">    height:150px;</span><br><span class="line">    background:transparent url(bg.jpg) no-repeat scroll 0 0;</span><br><span class="line">    border:5px solid green;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>效果如下图1</p><div style="overflow: hidden;"><br>    <img src="/2018/07/29/background-position/1.gif" align="left"><br></div><p>2、该属性定位不受对象的补丁属性( padding )设置影响。</p><p>例如，我们给容器元素增加padding值，背景图片的左上角还是与容器元素的左上角对齐。在此处只是影响到了容器元素的高度和宽度。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.container&#123;</span><br><span class="line">    width:300px;</span><br><span class="line">    height:150px;</span><br><span class="line">    background:transparent url(bg.jpg) no-repeat scroll 0 0;</span><br><span class="line">    border:5px solid green;</span><br><span class="line">    padding:50px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>效果如图2：<br><img src="/2018/07/29/background-position/2.gif" alt="图二"></p><p>3、background-position:-70px -40px;</p><p>图片以容器左上角为参考向左偏移70px，向上偏移 40px，示例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.container&#123;</span><br><span class="line">    width:300px;</span><br><span class="line">    height:150px;</span><br><span class="line">    background:transparent url(bg.jpg) no-repeat scroll -70px -40px;</span><br><span class="line">    border:5px solid green;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>效果如图3：<br><img src="/2018/07/29/background-position/3.gif" alt="图三"></p><p>4、background-position:70px 40px;</p><p>图片以容器左上角为参考向右偏移70px，向下偏移 40px，示例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.container&#123;</span><br><span class="line">    width:300px;</span><br><span class="line">    height:150px;</span><br><span class="line">    background:transparent url(bg.jpg) no-repeat scroll 70px 40px;</span><br><span class="line">    border:5px solid green;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>效果如图4：<br><img src="/2018/07/29/background-position/4.gif" alt="图四"></p><p>5、background-position:50% 50%;</p><p>图片水平和垂直居中。与 background-position:center center;效果等同。</p><p>等同于x：{容器(container)的宽度—背景图片的宽度}<em>x百分比，超出的部分隐藏。<br>等同于y：{容器(container)的高度—背景图片的高度}</em>y百分比，超出的部分隐藏。</p><p> 例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.container&#123;</span><br><span class="line">       width:300px;</span><br><span class="line">       height:150px;</span><br><span class="line">       background:transparent url(bg.jpg) no-repeat scroll 50% 50%;</span><br><span class="line">       border:5px solid green;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure></p><p>其x=(300-210)*50%=45px;</p><p>y=(150-120)*50%=15px;</p><p>效果如图5：<br><img src="/2018/07/29/background-position/5.gif" alt="图五"><br>由于超出部分别往两端延伸，所以我们可以先制作一张宽度足够宽图片设置水平值为50%，这样可以用来适应不同的浏览器，使得图片水平充满浏览器窗口并且居中。替代margin:50 auto的功能。</p><p>6、background-position:-50% -50%;</p><p>等同于x：-{容器(container)的宽度—背景图片的宽度}<em>x百分比，超出的部分隐藏。<br>等同于y：-{容器(container)的高度—背景图片的高度}</em>y百分比，超出的部分隐藏。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.container&#123;</span><br><span class="line">    width:300px;</span><br><span class="line">    height:150px;</span><br><span class="line">    background:transparent url(bg.jpg) no-repeat scroll -50% -50%;</span><br><span class="line">    border:5px solid green;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>效果如图6：<br><img src="/2018/07/29/background-position/6.gif" alt="图六"></p><p>7、background-position:100% 100%;</p><p>图片处于容器元素的右下角，与 background-position:right bottom;效果等同。</p><p>示例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.container&#123;</span><br><span class="line">    width:300px;</span><br><span class="line">    height:150px;</span><br><span class="line">    background:transparent url(bg.jpg) no-repeat scroll 100% 100%;</span><br><span class="line">    border:5px solid green;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>效果如图7：<br><img src="/2018/07/29/background-position/7.gif" alt="图七"></p>]]></content>
     
