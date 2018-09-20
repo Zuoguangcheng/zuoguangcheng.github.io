@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-20T07:17:53.282Z</updated>
+  <updated>2018-09-20T07:27:55.598Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>background-position</title>
+    <title>关于动画，你需要知道的</title>
     <link href="http://yoursite.com/2018/07/29/animation/"/>
     <id>http://yoursite.com/2018/07/29/animation/</id>
     <published>2018-07-29T06:37:35.000Z</published>
-    <updated>2018-09-20T07:17:53.282Z</updated>
+    <updated>2018-09-20T07:27:55.598Z</updated>
     
     <content type="html"><![CDATA[<p>机滤两个关于动画的博客：</p><p><a href="http://www.w3cplus.com/animaton/animations-you-should-know.html" target="_blank" rel="noopener">http://www.w3cplus.com/animaton/animations-you-should-know.html</a></p><p><a href="https://www.h5jun.com/post/animations-you-should-know.html" target="_blank" rel="noopener">https://www.h5jun.com/post/animations-you-should-know.html</a></p>]]></content>
     
